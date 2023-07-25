@@ -1,0 +1,71 @@
+body{
+  margin:0;
+  padding:0;
+  background-image: url(https://live.staticflickr.com/2908/14570496411_fb8a8dde08_b.jpg);
+  background-position: center;
+  background-size: cover;
+
+
+}
+.navbar ul{
+list-style: none;
+background:#080808  ;
+margin:0;
+padding: 0;
+text-align: right;
+}
+.navbar li{
+  display:inline-block;
+
+}
+.navbar a{
+  text-decoration: none;
+  width:100px;
+  display: block;
+  padding:25px 20px;
+  text-transform: uppercase;
+  color:#fff;
+  text-align: center;
+
+}
+.navbar li a:hover{
+background:#353640 ;
+}
+
+.sidebar{
+  height:109vh;
+  width:280px;
+  margin:0;
+  padding: 0;
+  background:rgba(255,255,255,0.1) ;
+  box-shadow:0 0  6px rgba(255,255,255,0.1) ;
+}
+.sidebar h1{
+color:#353640 ;
+display:block;
+text-align: center;
+line-height: 75px;
+background: #fff;
+margin-top: 0;
+}
+.sidebar ul{
+  list-style: none;
+}
+.sidebar li{
+  display:block;
+  line-height: 50px;
+  padding: 10px 50px;
+  margin:10px;
+
+  border-bottom: 1px solid black;
+ 
+}
+.sidebar li a{
+  text-decoration: none;
+  color:#fff;
+  width:100%;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  
+ 
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EXAM PREPARATION</title>
+        <script  type="text/javascript">
+         //onclick event
+              function ccc(){
+                alert("onclick event");
+                document.write("why you click's me");
+            }
+        //confirmation box
+            function ffff(){
+                 var res= confirm("are you student?");
+                 if(res==true){
+                    document.write("user is student");
+                    return true;
+                 }
+                 else{
+                    document.write("user is not student");
+                    return false;
+                 }
+            }
+          //prompt
+          function qqq(){
+            var res=prompt("What is your name :" , "your name");
+            document.write("your name is "+ res);
+           }
+        </script>
+    </head>
+    <body>
+
+<!--Basic validation and data format validation-->
+
+
+        <form name="myform">
+           <label for="fname">F_name<input type="text" name="fname"></label><br>
+           <label for="lname">L_name<input type="text" name="lname"></label><br>
+           <label for="age">Age<input type="number" name="age"></label><br>
+           <input type="submit" value="SUBMIT" onclick="validate_form()">
+        </form> 
+        <input type="button" value="click" onclick="">
+        
+        <script>
+           function validate_form(){
+        if(document.forms['myform']['fname'].value==""){
+           alert("please fill your name");
+           document.forms['myform']['fname'].focus();
+           return false;
+        }
+        if(document.forms['myform']['age'].value<18){
+            alert("you are under 18 ... it is not allowed for you");
+            return false;
+        }
+    }  
+        </script>
+    </body>
+</html>

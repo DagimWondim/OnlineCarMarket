@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sell </title>
+        <link rel="stylesheet" href="sell.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+            <li><a href="http://127.0.0.1:5500/pro.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/USED.HTML">RENT</a></li>
+            <li><a href="http://127.0.0.1:5500/USED.HTML">ABOUT</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Dagi Car Market</h1>
+        <p>Welcome to Dagi's ,Thanks for choosing us to sell your car<br>We will post your car in this website for sell for 30 Days. If your car not be selled until then, we will buy your car.  <br> Please fill out this form with the required information carefully.</p>
+        <form method="" action="">
+            <fieldset>
+                <label for="F_name">Enter Your First Name:<input type="text" id="f_name" name="f_name" required></label>
+                <label for="l_name">Enter Your Last Name:<input type="text" id="l_name" name="l_name" required></label>
+                <label for="m_name">Enter Your Middle Name:<input type="text" id="m_name" name="m_name" required></label>
+                <label for="email">Enter Your Email:<input type="email" id="email" name="email" ></label>
+            </fieldset>
+            <fieldset>
+                <label for="phone">Enter your Mobile no:<input type="number" id="phone" name="phone" required></label>
+                <label for="address">Enter your Address:<select id="address" name="address">
+                    <option value="">(Select one)</option>
+                    <option value="1">Addis Ababa</option>
+                    <option value="1">DireDawa</option>
+                    <option value="1">Bahir Dar</option>
+                    <option value="1">Gondar</option>
+                    <option value="1">Adama</option>
+                    <option value="1">Harar</option>
+                    <option value="1">Jijiga</option>
+                    <option value="1">Mekelle</option>
+                </select></label>
+                <label for="photo">Enter your passport size photo:<input type="file" id="photo" name="photo" required></label>
+                <label for="age">Enter your age:<input type="age" id="age" name="age" min="18"max="120" required></label>
+            </fieldset>
+           <fieldset>
+            <p>Please enter the right information about your car carefully</p>
+            <label for="model">Enter your Car Model:<input type="Text" id="text" name="text" required></label>
+            <label for="plate">Enter your car plate number:<input type="text" id="plate" name="plate" required></label>
+            <label for="front">Enter your car front photo:<input type="file" id="front" name="front" required></label>
+            <label for="end">Enter your car back photo:<input type="file" id="back" name="back" required></label>
+            <label for="right">Enter your car right side photo:<input type="file" id="right" name="right" required></label>
+            <label for="left">Enter your car left side photo:<input type="file" id="left" name="left" required></label>
+            <label for="dashboard">Enter your car dashboard photo:<input type="file" id="dashboard" name="dashboard" required></label>
+           </fieldset>
+              
+              <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+              </label>
+              <input type="submit" value="Submit" />
+
+            
+        </form>
+    </body>
+</html>

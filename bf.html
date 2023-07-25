@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation Assignment</title>
+        <link rel="stylesheet" href="bf.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="form">
+              <div class="form_box">
+              <h1>Sign in</h1>
+            
+                <label for="F_name">Enter Your First Name:<input type="text" id="f_name" name="f_name" placeholder="First name"></label>
+                <div id="error1"></div>
+                <label for="l_name">Enter Your Last Name:<input type="text" id="l_name" name="l_name" placeholder="Last name" ></label>
+                <div id="error2"></div>
+                <label for="m_name">Enter Your Middle Name:<input type="text" id="m_name" name="m_name" placeholder="Middle name" ></label>
+                <div id="error3"></div>
+                <label for="email">Enter Your Email:<input type="email" id="email" name="email" placeholder="Email address"></label>
+                <div id="error4"></div>
+                <label for="password">Create new password:<input type="password" id="password1" placeholder="Password"></label>
+                <div id="error5"></div>
+                
+
+      <input type="submit" value="Submit" id="submit" />
+
+
+            <script>
+
+               let Form = document.getElementById('form');
+                let fname = document.getElementById('f_name'); 
+                let lname = document.getElementById("l_name");
+                let mname = document.getElementById('m_name');
+                let email = document.getElementById('email');
+                let password1 = document.getElementById('password1');
+               
+          
+                form.addEventListener('submit' , e=> {
+           
+                  if(f_name.value===''){
+                   e.preventDefault();
+                   error1.innerText='First name is empty';
+                   f_name.style.borderColor='red';
+                   error1.style.color='red';
+                  }
+           
+                  if(l_name.value===''){
+                   e.preventDefault();
+                   error2.innerText='Last name is empty';
+                   l_name.style.borderColor='red';
+                   error2.style.color='red';
+                  }
+           
+                  if(m_name.value===''){
+                   e.preventDefault();
+                   error3.innerText='Middle name is empty';
+                   m_name.style.borderColor='red';
+                   error3.style.color='red';
+                  }
+           
+                  if(email.value===''){
+                   e.preventDefault();
+                   error4.innerText='Email is required';
+                   f_name.style.borderColor='red';
+                   error4.style.color='red';
+                  }
+           
+                  if(password1.value.length<8){
+                   e.preventDefault();
+                   error5.innerText='password must be above 8 chararcter';
+                   password1.style.borderColor='red';
+                   error5.style.color='red';
+                  }
+                  
+                });
+           
+                   </script>
+
+    </body>
+</html>

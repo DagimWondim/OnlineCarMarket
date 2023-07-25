@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form </title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/pro.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/sell.html">SELL</a></li>
+                <li><a href="http://127.0.0.1:5500/USED.HTML">RENT</a></li>
+                <li><a href="http://127.0.0.1:5500/USED.HTML">ABOUT</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Dagi Car Market</h1>
+        <p>Welcome to Dagi's please enjoy the discount<br>We are showing you items that are located in Ethiopia. 
+            To see items that ship to another country please <a href="https://www.cars.com/">click here</a><br>Before you start purchasing please fill out this form with the required information carefully.</p>
+        <form method="" action="" id="form">
+            <fieldset>
+                <label for="F_name">Enter Your First Name:<input type="text" id="f_name" name="f_name" ></label>
+                <div id="error1"></div>
+                <label for="l_name">Enter Your Last Name:<input type="text" id="l_name" name="l_name" ></label>
+                <div id="error2"></div>
+                <label for="m_name">Enter Your Middle Name:<input type="text" id="m_name" name="m_name" ></label>
+                <div id="error3"></div>
+                <label for="email">Enter Your Email:<input type="email" id="email" name="email" ></label>
+                <div id="error4"></div>
+                <label for="password">Create new password:<input type="password" id="password1"></label>
+                <div id="error5"></div>
+                <label for="password">Confirm your password:<input type="password" id="password2"></label>
+                <div id="error6"></div>
+            </fieldset>
+            <fieldset>
+                <label for="phone">Enter your Mobile no:<input type="number" id="phone" name="phone" ></label>
+                <label for="address">Enter your Address:<select id="address" name="address">
+                    <option value="">(Select one)</option>
+                    <option value="1">Addis Ababa</option>
+                    <option value="1">DireDawa</option>
+                    <option value="1">Bahir Dar</option>
+                    <option value="1">Gondar</option>
+                    <option value="1">Adama</option>
+                    <option value="1">Harar</option>
+                    <option value="1">Jijiga</option>
+                    <option value="1">Mekelle</option>
+                </select></label>
+                <label for="photo">Enter your passport size photo:<input type="file" id="photo" name="photo" ></label>
+                <label for="age">Enter your age:<input type="age" id="age" name="age" min="18"max="120" ></label>
+            </fieldset>
+            <fieldset>
+                <p>Please enter your payment option</p>
+                <section class="bank">
+                <input type="radio" id="bank" 
+                    name="bank" value="CBE">
+                <label for="bank"><img src="https://www.worldremit.com/images/logos/commercial-bank-ethiopia.gif">
+                   </section>
+                   <section>
+                    <input type="radio" id="bank" 
+                    name="bank" value="BOA">
+                <label for="bank"><img src="https://th.bing.com/th/id/OIP.e_1kBdW1cJ7ixce1PtOgiAAAAA?pid=ImgDet&rs=1">
+                    </section>
+                    <section>
+                    <input type="radio" id="bank" 
+                    name="bank" value="Dashen" >
+                <label for="bank"><img src="https://allaboutethio.com/images/dashen-bank-logo-banks-in-ethiopia.jpg" 
+                    width="115" height="50">
+                </section>
+            </fieldset>
+            
+              <label for="acc_no">Please enter your account number<input type="number" id="acc_no" name="acc_no"></label>
+              <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+              </label>
+              <input type="submit" value="Submit" />
+              
+
+            
+        </form>
+ 
+        <script>
+
+     let form = document.getElementById('form');
+     let Fname = document.getElementById('f_name');
+     let Lname = document.getElementById("l_name");
+     let Mname = document.getElementById('m_name');
+     let Email = document.getElementById('email');
+     let password1 = document.getElementById('password1');
+     let password2= document.getElementById('password2');
+
+
+     form.addEventListener('submit' , e=> {
+
+       if(f_name.value===''){
+        e.preventDefault();
+        error1.innerText='First name is empty';
+        f_name.style.borderColor='red';
+        error1.style.color='red';
+       }
+
+       if(l_name.value===''){
+        e.preventDefault();
+        error2.innerText='Last name is empty';
+        l_name.style.borderColor='red';
+        error2.style.color='red';
+       }
+
+       if(m_name.value===''){
+        e.preventDefault();
+        error3.innerText='Middle name is empty';
+        m_name.style.borderColor='red';
+        error3.style.color='red';
+       }
+
+       if(email.value===''){
+        e.preventDefault();
+        error4.innerText='Email is required';
+        f_name.style.borderColor='red';
+        error4.style.color='red';
+       }
+
+       if(password1.value.length<8){
+        e.preventDefault();
+        error5.innerText='password must be above 8 chararcter';
+        password1.style.borderColor='red';
+        error5.style.color='red';
+       }
+       if(password1Value===password2Value){
+        e.preventDefault();
+        error6.innerText='Correct Thanks ...';
+        password2.style.borderColor='green';
+        error6.style.color='green';
+       }
+       else{
+        e.preventDefault();
+        error6.innerText="not correct...";
+        password2.style.borderColor='red';
+        error6.style.color='red';
+       }
+     });
+
+        </script>
+
+
+    </body>
+</html>

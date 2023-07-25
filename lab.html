@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAb 1</title>
+
+    </head>
+    <body> 
+        <h1>LAB 1</h1>
+
+    <form id="form_id">
+        <label for="name" >Enter your Name : <input type="text" id="name"></label><br>
+        <label for="pass" >Enter your Password : <input type="password" id="pass"></label><br>
+        <div id="error"></div>
+        <input type="submit" value="SUBMIT" >
+    </form>
+
+
+
+        <script>
+
+const form_id=document.getElementById('form_id');
+const name=document.getElementById('name');
+const pass=document.getElementById('pass');
+const error = document.getElementById('error');
+
+form_id.addEventListener('submit',e=>{
+
+if(name.value==='' || name.value===null){
+   e.preventDefault();
+   error.innerText = 'Please fill your name';
+   name.style.borderColor='red';
+   error.style.color='red';
+
+}
+if(pass.value.length <8){
+    e.preventDefault();
+    error.innerText ='password lenght must be 8 or above character';
+    pass.style.borderColor='red';
+   error.style.color='red';
+}
+else {
+    pass.style.borderColor='green';
+   name.style.borderColor='green';
+}
+});
+
+
+//   console.log("LAB 1");
+//   gender="Male";
+  
+//   console.log(gender);
+ let person=["dagi","beti","feb"];
+ console.log("\nFamily members");
+ for(i=0;i<=2;i++)
+ console.log(person[i]);
+ 
+  person[0]={name:'Dagim',Age:22 , Id:40724};
+  person[1]={name:'Bethlehem',Age:28 , Id:46794};
+  person[2]={name:'Feben',Age:25 , Id:75824}; 
+
+  for(i=0;i<=2;i++)
+  console.log(person[i])   
+  
+  
+  for ( key in person) {
+         console.log(person[i]);
+        
+    }
+  for (let key in person) {
+    console.log(person[i]);
+        let element = person[key];
+        
+    }
+  
+  
+        </script>
+    </body>
+</html>

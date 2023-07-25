@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <title>Web programming Home Work</title>
+    <style>
+        table{
+        background: green;
+        border-color:red;
+        height:150px;
+        width:100px;
+        }
+        th, td {
+  padding: 10px;
+}
+   tr.info{
+    background-color: blue;
+   }
+    </style>
+    </head>
+    <body>
+   <h1>WELCOME<a name="top"></a></h1>
+   <a href="#middle">Move to middle</a>
+   <table border="5px">
+    <thead>
+        Department table
+    </thead>
+    <tbody>
+    <tr><th>ID</th><th>NAME</th><th>DEPT</th></tr>
+    <tr><td>1</td><td>X</td><td>IT</td></tr>
+    <tr><td>2</td><td>Y</td><td rowspan="2">CS</td></tr>
+    <tr><td>3</td><td>Z</td>
+    <tr class="info"><td colspan="3">INFORMATICS</td></tr>
+    </tbody>
+     </table>
+     <frameset rows="50%,50%">
+        <frame name="x" src="x.html" >
+        <frame name="y" src="y.html" >
+        </frameset>
+    <frameset col="50%,50%">
+        <frame src="z.html" >
+        <frame src="a.html" >
+    </frameset> 
+     
+   <h2>Hello<a name="middle"></a></h2>
+   <a href ="#top">Move to top</a>
+
+    </body>
+</html>

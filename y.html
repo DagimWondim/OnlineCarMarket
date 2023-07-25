@@ -1,0 +1,84 @@
+<html>
+    <head>
+
+        <script type="text/javascript">
+            <!-- 
+                function wa(){
+                    alert("mnw mnw anta endanakagn eyalkuk")
+                    document.write("duzz asamam ende endanakagnnnn")
+                }
+                function da(name,age){
+                    document.write("my name is" + name +" & i am " + age +"years old")
+                }
+                function over(){
+                    document.write("over the mouse")
+                }
+                function out(){
+                    document.write("mouse out")
+                }
+                function getConfirmation(){
+                    var retVal= confirm("Do you want to continue ?");
+                    if(retval==true){
+                        document.write("User wants to continue!");
+                        return true
+                    }
+                    else{
+                        document.write("User does not want to continue!");]
+                        return false;
+                    }
+                }
+                //-->
+        </script>
+    </head>
+<body> <h1>Y-HTML</h1>
+    
+<script>
+    <!-- 
+       
+    console.log("hello dagi")
+    document.write("mnsheeeee nw man")
+    //-->
+    
+</script>
+<br><br>
+click here 
+<input type="button" onclick="wa()" value="Dont touch me"><BR>
+<input type="button" onclick="da('dagim',22)" value="person">
+<!--
+<br><br>
+
+<div onmouseover="over()" onmouseout="out()">
+<h1>This is javascript trial of event </h1>
+
+</div>
+-->
+<input type="button" onclick="getConfirmation()" value="retVal">
+
+<form id="myformm">
+</br>
+<label for="name">Name : <input type="text" id="nameee"></label>
+<div id="error11"></div>
+<br>
+<label for="age">Age : <input type="number" id="ageee"></label>
+ <div id="error22"></div>
+ <br>
+<input type="submit" value="submit">
+</form>
+
+<script>
+   let form=document.getElementById('myformm') ;
+   let name=document.getElementById('nameee');
+   let age=document.getElementById('ageee');
+ 
+
+   myformm.addEventListener('submit', e=>{
+ if(nameee.value===' '){
+    e.preventDefault();
+    error11.innerText='please enter your name';
+    nameee.style.borderColor='red';
+    error11.style.color='red';
+ }
+ })
+</script>
+</body>
+    </html>
